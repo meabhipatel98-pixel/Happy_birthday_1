@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#ff7eb6">
+
+  <title>For Soumya 💗</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <!-- Floating hearts -->
+  <div class="hearts" aria-hidden="true"></div>
+
+
+  <main>
+
+    <!-- =========================
+         PAGE 1 - INTRO
+    ========================== -->
+
+    <section id="intro" class="screen intro">
+
+      <div class="sparkle">✦</div>
+
+      <p class="tiny">
+        A little surprise for you
+      </p>
+
+      <h1>
+        Hey Soumya! 💗
+      </h1>
+
+      <p class="subtitle">
+        Someone made something just for you...
+      </p>
+
+      <button id="openBtn" class="btn">
+        Open Your Surprise 🎁
+      </button>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAGE 2 - BIRTHDAY
+    ========================== -->
+
+    <section id="birthday" class="screen hidden">
+
+      <div class="confetti"></div>
+
+      <p class="tiny">
+        Today is your day ✨
+      </p>
+
+      <h2>
+        Happy Birthday
+      </h2>
+
+      <h1 class="name">
+        Soumya 💕
+      </h1>
+
+      <p class="wish">
+        May your smile stay this cute,<br>
+        your days stay this bright,<br>
+        and your year be full of beautiful little moments.
+      </p>
+
+
+      <!-- Photo -->
+      <div class="photo-card">
+
+        <div class="tape"></div>
+
+        <img
+          src="images/soumya.jpg"
+          alt="Soumya"
+        >
+
+        <span>
+          ✨ Birthday girl ✨
+        </span>
+
+      </div>
+
+
+      <!-- Go to letter -->
+      <button id="letterBtn" class="btn secondary">
+        There's a little letter for you 💌
+      </button>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAGE 3 - LETTER
+    ========================== -->
+
+    <section id="letter" class="screen hidden">
+
+      <div class="letter-card">
+
+        <div class="envelope">
+          💌
+        </div>
+
+        <h2>
+          For Soumya
+        </h2>
+
+        <!-- JavaScript types the letter here -->
+        <p id="typedText"></p>
+
+        <p class="signature">
+          — From Abhishek ❤️
+        </p>
+
+        <!-- Go to final page -->
+        <button id="wishBtn" class="btn">
+          Make a Wish 🎂
+        </button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAGE 4 - FINAL
+    ========================== -->
+
+    <section id="final" class="screen hidden">
+
+      <div class="final-card">
+
+        <div class="cake">
+          🎂
+        </div>
+
+        <h1>
+          Make a wish, Soumya! ✨
+        </h1>
+
+        <p>
+          Close your eyes for a second...
+        </p>
+
+        <p class="big-heart">
+          ♡
+        </p>
+
+        <p>
+          And remember: you deserve all the happiness in the world. 💗
+        </p>
+
+        <!-- Replay -->
+        <button id="againBtn" class="btn secondary">
+          Replay the surprise ↻
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       BIRTHDAY MUSIC
+  ========================== -->
+
+  <audio id="birthdayMusic" loop>
+    <source
+      src="music/birthday.mp3"
+      type="audio/mpeg"
+    >
+    Your browser does not support audio.
+  </audio>
+
+
+  <!-- Music control -->
+  <button id="musicButton" class="music-button">
+    🎵 Play Music
+  </button>
+
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

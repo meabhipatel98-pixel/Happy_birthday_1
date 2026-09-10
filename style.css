@@ -1,0 +1,105 @@
+* { box-sizing: border-box; }
+:root {
+  --pink: #ff6fae;
+  --pink2: #ff9fc9;
+  --cream: #fff9fc;
+  --text: #5b3b4f;
+  --shadow: 0 18px 50px rgba(181, 84, 126, .18);
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 10%, #ffd8e9 0 8%, transparent 25%),
+    radial-gradient(circle at 90% 20%, #ffe8b7 0 7%, transparent 22%),
+    linear-gradient(135deg, #fff7fb, #fff0f6 48%, #fffaf1);
+  overflow-x: hidden;
+}
+body:before {
+  content: "";
+  position: fixed; inset: 0; pointer-events: none;
+  background-image: radial-gradient(#ffb6d2 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: .25;
+}
+main { position: relative; z-index: 2; min-height: 100vh; }
+.screen {
+  min-height: 100vh;
+  width: 100%;
+  padding: 34px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fade .8s ease;
+}
+.hidden { display: none !important; }
+.intro h1, .birthday h1, .final-card h1 {
+  font-family: "Baloo 2", cursive;
+  margin: 4px 0 8px;
+  line-height: .95;
+}
+.intro h1 { font-size: clamp(3.2rem, 15vw, 6rem); color: #ef5e9c; }
+.birthday h2 { font-family: "Baloo 2", cursive; font-size: clamp(2.2rem, 11vw, 4rem); margin: 0; color: #ed5f9d; }
+.name { font-size: clamp(3.5rem, 17vw, 6.5rem); color: #ff6fae; text-shadow: 0 5px 0 #ffd0e2; }
+.tiny { text-transform: uppercase; letter-spacing: 4px; font-size: .72rem; font-weight: 600; color: #b06b88; }
+.subtitle, .wish, .final-card p { font-size: 1rem; line-height: 1.8; max-width: 520px; }
+.btn {
+  border: 0; cursor: pointer; margin-top: 22px;
+  padding: 15px 24px; border-radius: 999px;
+  color: white; background: linear-gradient(135deg, #ff6fae, #ff93bd);
+  font: 600 1rem "Poppins", sans-serif;
+  box-shadow: 0 12px 28px rgba(255,111,174,.3);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 16px 34px rgba(255,111,174,.38); }
+.btn.secondary { color: #b64f7e; background: rgba(255,255,255,.85); border: 1px solid #ffd0e1; }
+.sparkle { font-size: 3rem; animation: pulse 1.5s infinite; }
+.photo-card {
+  position: relative; margin-top: 28px; padding: 12px 12px 16px;
+  width: min(78vw, 310px); background: white; border-radius: 8px;
+  box-shadow: var(--shadow); transform: rotate(-2deg);
+}
+.photo-card img { display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 4px; }
+.photo-card span { display:block; font-family:"Baloo 2"; font-size:1.1rem; margin-top:5px; color:#9d617c; }
+.tape {
+  position:absolute; top:-14px; left:50%; transform:translateX(-50%) rotate(2deg);
+  width:88px; height:28px; background:rgba(255,218,151,.78); z-index:3;
+}
+.letter-card, .final-card {
+  width: min(92vw, 570px); padding: 34px 25px;
+  background: rgba(255,255,255,.86); border: 1px solid #ffe0ec;
+  border-radius: 30px; box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+.letter-card h2 { font-family:"Baloo 2"; color:#ed5f9d; font-size:2.5rem; margin:4px 0 14px; }
+.envelope, .cake { font-size:3.4rem; }
+#typedText { min-height: 150px; font-size:1rem; line-height:2; }
+.signature { font-family:"Baloo 2"; font-size:1.2rem; color:#c05d86; }
+.big-heart { font-size:6rem !important; color:#ff76ad; margin: 8px 0 !important; animation: pulse 1.2s infinite; }
+.music {
+  position:fixed; z-index:10; right:18px; bottom:18px;
+  width:48px; height:48px; border-radius:50%; border:1px solid #ffd3e4;
+  background:rgba(255,255,255,.9); box-shadow:var(--shadow); cursor:pointer; font-size:1.2rem;
+}
+.hearts { position:fixed; inset:0; pointer-events:none; z-index:1; overflow:hidden; }
+.heart {
+  position:absolute; bottom:-30px; animation: floatUp linear forwards;
+  opacity:.7; filter: drop-shadow(0 3px 5px rgba(0,0,0,.08));
+}
+.confetti-piece {
+  position:fixed; top:-20px; width:9px; height:14px; z-index:8;
+  animation: fall 3.2s linear forwards;
+}
+@keyframes fade { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+@keyframes pulse { 50% { transform:scale(1.12); } }
+@keyframes floatUp { to { transform:translateY(-115vh) rotate(540deg); opacity:0; } }
+@keyframes fall { to { transform:translateY(110vh) rotate(720deg); opacity:0; } }
+@media (max-width: 430px) {
+  .screen { padding: 26px 16px; }
+  .wish { font-size:.92rem; }
+  .letter-card { padding: 28px 20px; }
+}

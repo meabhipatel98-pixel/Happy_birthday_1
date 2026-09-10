@@ -23,10 +23,10 @@ let timer;
 
 
 // ================================
-// SOUMYA'S LETTER
+// Saumya'S LETTER
 // ================================
 
-const message = `Dear Soumya, 💗
+const message = `Dear Saumya, 💗
 
 Instagram par ek random si mulaqat se shuru hui humari story kab itni special ban gayi, pata hi nahi chala.
 
@@ -38,7 +38,7 @@ Aaj tumhare birthday par bas itna kehna hai — hamesha khush rehna, smile karti
 
 Aur haan… future mein kitne bhi jhagde ho, permanently block mat karna yaar. 😭😂
 
-Once again, Happy Birthday, Soumya! 🎂💖
+Once again, Happy Birthday, Saumya! 🎂💖
 
 Chahe waqt badle, situations badlein ya hum kitna bhi ladein, tumhari friendship mere liye hamesha special rahegi. ❤️
 

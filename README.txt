@@ -1,10 +1,10 @@
-# Soumya Birthday Website 💗
+# Saumya Birthday Website 💗
 
 ## Run locally
 Open `index.html` in a browser.
 
 ## Customize
-- Replace `images/soumya.jpg` with another photo if desired.
+- Replace `images/Saumya.jpg` with another photo if desired.
 - Edit the `message` variable in `script.js` for a personal message.
 - The music is an original tiny Web Audio melody, so no music file is required.
 
